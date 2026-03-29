@@ -35,7 +35,8 @@ export function MotionSection({
       const raw =
         (viewportHeight - rect.top) / (viewportHeight + rect.height * 0.75);
 
-      setProgress(clamp(raw, 0.15, 1));
+      const roundedProgress = Math.round(clamp(raw, 0.15, 1) * 100) / 100;
+      setProgress(roundedProgress);
       frame = 0;
     };
 

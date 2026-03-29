@@ -36,7 +36,9 @@ body {
     var(--bg);
   color: var(--text);
   font-family: var(--font-sans), sans-serif;
-  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
 }
 
 a {
@@ -59,7 +61,7 @@ a {
   }
 
   .glass-panel {
-    @apply rounded-3xl border shadow-ambient backdrop-blur;
+    @apply rounded-3xl border shadow-ambient backdrop-blur-sm;
     border-color: rgba(180, 255, 0, 0.1);
     background: linear-gradient(
       180deg,
@@ -85,7 +87,7 @@ a {
   }
 
   .button-primary {
-    @apply inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-1;
     border-color: rgba(180, 255, 0, 0.35);
     background: linear-gradient(
       135deg,
@@ -105,7 +107,7 @@ a {
   }
 
   .button-secondary {
-    @apply inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center rounded-full border px-5 py-3 text-sm font-medium transition duration-300 hover:-translate-y-1;
     border-color: rgba(255, 255, 255, 0.08);
     background: rgba(255, 255, 255, 0.04);
     color: #dfe8cf;
@@ -135,7 +137,7 @@ a {
     transition:
       transform 220ms linear,
       opacity 220ms linear;
-    will-change: transform, opacity;
+    backface-visibility: hidden;
   }
 
   .signal-line {
