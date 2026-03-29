@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/section-heading";
+import { MotionSection } from "@/components/motion-section";
 
 const contactLinks = [
   {
@@ -20,7 +21,7 @@ const contactLinks = [
 
 export function ContactSection() {
   return (
-    <section id="contact" className="shell section-gap">
+    <MotionSection id="contact" className="shell section-gap">
       <div className="glass-panel overflow-hidden rounded-[2rem]">
         <div className="grid gap-10 p-6 md:p-10 lg:grid-cols-[0.95fr_1.05fr]">
           <SectionHeading
@@ -34,20 +35,20 @@ export function ContactSection() {
               <a
                 key={link.label}
                 href={link.href}
-                className="card-hover flex items-center justify-between rounded-2xl border border-white/8 bg-slate-950/40 px-5 py-5"
+                className="soft-panel card-hover flex items-center justify-between rounded-2xl border px-5 py-5"
               >
                 <div>
-                  <p className="font-mono text-xs uppercase tracking-[0.22em] text-slate-400">
+                  <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#7c8b75]">
                     {link.label}
                   </p>
                   <p className="mt-2 text-base text-white">{link.value}</p>
                 </div>
-                <span className="text-sm text-sky-200">Reach out</span>
+                <span className="text-sm text-[#dfff97]">Reach out</span>
               </a>
             ))}
           </div>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }

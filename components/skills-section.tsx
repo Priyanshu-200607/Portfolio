@@ -1,9 +1,10 @@
 import { SectionHeading } from "@/components/section-heading";
+import { MotionSection } from "@/components/motion-section";
 import { skillGroups } from "@/lib/data";
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="shell section-gap">
+    <MotionSection id="skills" className="shell section-gap">
       <div className="space-y-12">
         <SectionHeading
           eyebrow="Skills"
@@ -17,14 +18,14 @@ export function SkillsSection() {
               key={group.title}
               className="glass-panel card-hover rounded-[2rem] p-6 md:p-7"
             >
-              <p className="font-mono text-xs uppercase tracking-[0.24em] text-sky-200">
+              <p className="font-mono text-xs uppercase tracking-[0.24em] text-[#dfff97]">
                 {group.title}
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200"
+                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-[#dde8cf]"
                   >
                     {item}
                   </span>
@@ -34,6 +35,6 @@ export function SkillsSection() {
           ))}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }

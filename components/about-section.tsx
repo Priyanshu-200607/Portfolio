@@ -1,4 +1,5 @@
 import { SectionHeading } from "@/components/section-heading";
+import { MotionSection } from "@/components/motion-section";
 
 const principles = [
   {
@@ -17,7 +18,7 @@ const principles = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="shell section-gap">
+    <MotionSection id="about" className="shell section-gap">
       <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
         <SectionHeading
           eyebrow="About"
@@ -34,13 +35,13 @@ export function AboutSection() {
               <h3 className="text-xl font-medium text-white">
                 {principle.title}
               </h3>
-              <p className="mt-3 text-sm leading-7 text-slate-300 md:text-base">
+              <p className="mt-3 text-sm leading-7 text-[#a6b69f] md:text-base">
                 {principle.copy}
               </p>
             </article>
           ))}
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }

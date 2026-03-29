@@ -1,3 +1,5 @@
+import { MotionSection } from "@/components/motion-section";
+
 const statItems = [
   {
     value: "3+",
@@ -15,20 +17,20 @@ const statItems = [
 
 export function HeroSection() {
   return (
-    <section className="shell section-gap relative flex min-h-screen items-center">
+    <MotionSection className="shell section-gap relative flex min-h-screen items-center">
       <div className="grid w-full gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
         <div className="space-y-8">
           <div className="fade-in space-y-6">
             <span className="eyebrow">Backend-Focused Full Stack Developer</span>
             <div className="space-y-5">
-              <p className="font-mono text-sm uppercase tracking-[0.3em] text-slate-400">
+              <p className="font-mono text-sm uppercase tracking-[0.3em] text-[#8ea185]">
                 Priyanshu Swami
               </p>
               <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] text-white md:text-7xl">
                 Building practical systems with strong backend architecture,
                 clean APIs, and real product intent.
               </h1>
-              <p className="max-w-2xl text-base leading-8 text-slate-300 md:text-lg">
+              <p className="max-w-2xl text-base leading-8 text-[#a6b69f] md:text-lg">
                 I learn by shipping. My work sits at the intersection of
                 backend engineering, AI-assisted workflows, database-heavy
                 applications, and automation built for actual use instead of
@@ -52,10 +54,10 @@ export function HeroSection() {
                 key={item.label}
                 className="glass-panel card-hover rounded-2xl p-5"
               >
-                <p className="font-mono text-sm uppercase tracking-[0.22em] text-sky-200">
+                <p className="font-mono text-sm uppercase tracking-[0.22em] text-[#dfff97]">
                   {item.value}
                 </p>
-                <p className="mt-3 text-sm leading-6 text-slate-300">
+                <p className="mt-3 text-sm leading-6 text-[#a6b69f]">
                   {item.label}
                 </p>
               </div>
@@ -64,18 +66,19 @@ export function HeroSection() {
         </div>
 
         <div className="fade-in-delay glass-panel relative overflow-hidden rounded-[2rem] p-6 md:p-8">
-          <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-300/50 to-transparent" />
+          <div className="signal-line absolute inset-x-0 top-0 h-px" />
+          <div className="pointer-events-none absolute -right-10 top-10 h-32 w-32 rounded-full bg-[#b4FF00]/10 blur-3xl" />
           <div className="space-y-6">
             <div className="flex items-center justify-between">
               <div>
-                <p className="font-mono text-xs uppercase tracking-[0.28em] text-slate-400">
+                <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#83937c]">
                   System Snapshot
                 </p>
                 <p className="mt-2 text-lg font-medium text-white">
                   What I optimize for
                 </p>
               </div>
-              <div className="rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1 text-xs text-emerald-300">
+              <div className="accent-chip rounded-full border px-3 py-1 text-xs">
                 Builder mode
               </div>
             </div>
@@ -89,18 +92,18 @@ export function HeroSection() {
               ].map((point) => (
                 <div
                   key={point}
-                  className="rounded-2xl border border-white/8 bg-slate-950/40 p-4"
+                  className="soft-panel rounded-2xl border p-4"
                 >
-                  <p className="text-sm leading-7 text-slate-300">{point}</p>
+                  <p className="text-sm leading-7 text-[#aab8a4]">{point}</p>
                 </div>
               ))}
             </div>
 
-            <div className="rounded-2xl border border-sky-300/10 bg-sky-400/8 p-5">
-              <p className="font-mono text-xs uppercase tracking-[0.24em] text-sky-200">
+            <div className="accent-panel rounded-2xl border p-5">
+              <p className="font-mono text-xs uppercase tracking-[0.24em] text-[#dfff97]">
                 Current focus
               </p>
-              <p className="mt-3 text-sm leading-7 text-slate-300">
+              <p className="mt-3 text-sm leading-7 text-[#aab8a4]">
                 Face recognition workflows, local LLM orchestration, FastAPI
                 services, and database-backed systems designed to feel useful
                 from day one.
@@ -109,6 +112,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </MotionSection>
   );
 }
