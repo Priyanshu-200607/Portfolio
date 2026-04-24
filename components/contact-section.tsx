@@ -4,18 +4,18 @@ import { MotionSection } from "@/components/motion-section";
 const contactLinks = [
   {
     label: "Email",
-    value: "priyanshu@example.com",
-    href: "mailto:priyanshu@example.com",
+    value: "priyanshuswami08@gmail.com",
+    href: "mailto:priyanshuswami08@gmail.com",
   },
   {
     label: "GitHub",
-    value: "github.com/priyanshu-swami",
-    href: "https://github.com/priyanshu-swami",
+    value: "github.com/Priyanshu-200607",
+    href: "https://github.com/Priyanshu-200607",
   },
   {
     label: "LinkedIn",
-    value: "linkedin.com/in/priyanshu-swami",
-    href: "https://linkedin.com/in/priyanshu-swami",
+    value: "linkedin.com/in/priyanshu-swami-93bbb7307",
+    href: "https://www.linkedin.com/in/priyanshu-swami-93bbb7307",
   },
 ];
 

@@ -8,31 +8,31 @@ export const projects = [
     impact:
       "This project lets me work across computer vision basics, API design, storage strategy, and the practical constraints of making an ML-backed system usable in a real environment like a classroom or office.",
     stack: ["Python", "FastAPI", "Face Recognition", "PostgreSQL", "REST APIs"],
-    githubUrl: "https://github.com/priyanshu-swami/facedesk",
+    githubUrl: "https://github.com/Priyanshu-200607/facedesk",
     liveUrl: "#",
   },
   {
-    label: "Automation + Local AI",
-    name: "Tarz AI Assistant",
-    status: "Prototype",
+    label: "Linux / Security",
+    name: "WipeForge",
+    status: "Completed",
     description:
-      "A local AI assistant inspired by JARVIS, focused on voice-triggered actions, system control, and LLM-assisted workflows that stay practical rather than becoming a novelty interface.",
+      "A Linux-based secure file deletion utility implementing multi-pass overwrite algorithms conforming to the DoD 5220.22-M standard to prevent forensic data recovery. Features an interactive TUI for guided secure wipe operations.",
     impact:
-      "Tarz reflects my interest in combining automation, local model orchestration, and developer tooling into one coherent system that can eventually act as a real desktop productivity layer.",
-    stack: ["Python", "Local LLMs", "Voice Control", "Automation", "Linux"],
-    githubUrl: "https://github.com/priyanshu-swami/tarz",
+      "Includes real-time progress tracking, post-wipe cryptographic verification, and audit-ready session logging. Packaged the tool with a Makefile and prepared a PKGBUILD for Arch User Repository (AUR) distribution.",
+    stack: ["Python", "Linux", "CLI/TUI", "Bash", "AUR"],
+    githubUrl: "https://github.com/Priyanshu-200607/Wipe-Forge",
     liveUrl: "#",
   },
   {
-    label: "Scalable API Design",
-    name: "API Systems",
+    label: "System Automation",
+    name: "AI Orchestrator TUI",
     status: "Ongoing",
     description:
-      "A collection of backend-focused API builds where the main priority is clean architecture, structured data flow, sensible separation of concerns, and performance-oriented service design with FastAPI.",
+      "A terminal-based AI orchestration system enabling seamless interaction with locally hosted LLMs, automation pipelines, and system-level tools. Features real-time command parsing and context-aware task execution.",
     impact:
-      "This is the clearest representation of how I think as an engineer: APIs should be understandable, maintainable, and ready to support growth instead of being rushed into complexity.",
-    stack: ["FastAPI", "MariaDB", "PostgreSQL", "Docker", "System Design"],
-    githubUrl: "https://github.com/priyanshu-swami",
+      "Engineered a modular architecture integrating local LLM inference and system command execution for intelligent task routing. Optimized for low-latency, privacy-first AI interactions without reliance on external APIs.",
+    stack: ["Python", "TUI", "Local LLM", "System Automation"],
+    githubUrl: "https://github.com/Priyanshu-200607/Cli_Manager",
     liveUrl: "#",
   },
 ];
